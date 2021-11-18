@@ -1,0 +1,27 @@
+<a href="/places" class="btn-menu"> >Back to movies</a>
+<div class="container text-center mt-5">
+  <div class="card border-0 col-4" id="detail">
+    <div class="card-body">
+      <h5 class="card-title">{{placeDetails.name}}</h5>
+      <p class="card-text">{{placeDetails.type}}</p>
+      <p class="card-text">{{placeDetails.description}}</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex justify-content-around">
+      <form
+        action="/places/{{placeDetails.id}}/delete"
+        method="POST"
+        class="mt-5"
+      >
+        <button type="submit" class="btn btn-primary">Delete Place</button>
+      </form>
+      <a
+        href="/places/{{placeDetails.id}}/edit"
+        class="btn btn-primary"
+        id="edit-btn"
+      >Edit Place</a>
+    </div>
+  </div>
+
+</div>

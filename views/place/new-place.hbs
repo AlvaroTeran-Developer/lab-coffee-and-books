@@ -1,0 +1,75 @@
+<a href="/" class="btn-menu"> >Back to menu</a>
+
+<h1 class="text-center my-5">New Place</h1>
+<div class="d-flex justify-content-center">
+  <form action="/places/create" method="POST" id="form">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        name="name"
+      />
+    </div>
+    <label for="exampleInputPassword1" class="form-label">Type</label>
+    <div id="exampleInputPassword1">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="flexRadioDefault2"
+          name="type"
+          value="bookstore"
+          checked
+        />
+        <label class="form-check-label" for="flexRadioDefault2">
+          Bookstore
+        </label>
+      </div>
+      <div class="form-check my-3">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="flexRadioDefault1"
+          name="type"
+          value="coffe shop"
+        />
+        <label class="form-check-label" for="flexRadioDefault1">
+          Coffe Shop
+        </label>
+      </div>
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword2" class="form-label">Description</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputPassword2"
+        name="description"
+      />
+      <div id="emailHelp" class="form-text">A shot description of your fantastic
+        place</div>
+    </div>
+    <h3>Address</h3>
+    <div class="mb-3 d-flex justify-content-evenly">
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputPassword2"
+        name="lat"
+        placeholder="Latitude"
+      />
+      <input
+        type="text"
+        class="form-control mx-2"
+        id="exampleInputPassword2"
+        name="lng"
+        placeholder="Longitude"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

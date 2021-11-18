@@ -1,6 +1,9 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/BackGround.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 a {
@@ -9,4 +12,62 @@ a {
 
 h1 {
   color: 15px;
+}
+.card {
+  background-color: #eca1a1;
+}
+.row {
+  margin-left: 60px;
+}
+#form {
+  width: 60%;
+}
+#edit-btn {
+  margin-top: 45px;
+  height: 40px;
+}
+#detail {
+  margin: 0 auto;
+}
+
+.btn-menu {
+  padding: 10px 20px;
+  margin: 2% 5% 5% 2%;
+  border-radius: 300px;
+  background-color: #904c77;
+  transition: transform 0.2s;
+  color: black;
+}
+
+.btn-menu:hover {
+  text-decoration: none;
+  transform: scale(0.9);
+  background-color: #957d95;
+  color: black;
+}
+.btn {
+  background-color: #904c77;
+  border: #904c77;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  background-color: #957d95;
+}
+#map {
+  margin: auto auto;
+  width: 80%;
+  height: 400px;
+}
+.nav-item {
+  margin: 10px 0;
+}
+.link {
+  font-size: 15px;
+  margin: 0 15px;
+  color: white;
+}
+.link:hover {
+  color: #00b7ff;
+  text-decoration: none;
 }
